@@ -2,8 +2,25 @@
     "manifestVersion": 1,
     "id": "tfs-wi-copy",
     "version": "0.1.0",
-    "name": "tfs-wi-copy",
+    "name": "Copy Work Item Id",
+    "description": "Add a simple \"Copy Id\" button to all work items. The button will copy the Id(s) of the selected work item(s) to the user's clipboard.",
     "publisher": "travistx",
+    "categories": [
+        "Plan and track"
+    ],
+    "tags": [
+        "copy",
+        "work item"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/TravisTX/tfs-wi-copy"
+    },
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -44,6 +61,14 @@
         },
         {
             "path": "assets/copy-icon.png",
+            "addressable": true
+        },
+        {
+            "path": "assets/screenshot.png",
+            "addressable": true
+        },
+        {
+            "path": "overview.md",
             "addressable": true
         }
     ]

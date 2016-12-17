@@ -17,7 +17,7 @@ npm install
 npm run build
 ```
 
-Output will be palced into the /dist/ folder.
+The output vsix file will be placed into the /dist/ folder.
 
 ## License
 

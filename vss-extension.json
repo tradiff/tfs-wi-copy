@@ -1,0 +1,50 @@
+{
+    "manifestVersion": 1,
+    "id": "tfs-wi-copy",
+    "version": "0.1.0",
+    "name": "tfs-wi-copy",
+    "publisher": "travistx",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "copyId-work-item-menu",
+            "type": "ms.vss-web.action",
+            "description": "Sample toolbar item which updates the title of a work item",
+            "targets": [
+                "ms.vss-work-web.work-item-context-menu"
+            ],
+            "properties": {
+                "text": "Copy Id",
+                "title": "Copies the workitem id to the clipboard",
+                "toolbarText": "Copy Id",
+                "uri": "copy-id.html",
+                "icon": "assets/copy-icon.png"
+            }
+        }
+    ],
+    "scopes": [
+        "vso.work"
+    ],
+    "files": [
+        {
+            "path": "copy-id.html",
+            "addressable": true
+        },
+        {
+            "path": "main.js",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib/VSS.SDK.min.js",
+            "addressable": true
+        },
+        {
+            "path": "assets/copy-icon.png",
+            "addressable": true
+        }
+    ]
+}

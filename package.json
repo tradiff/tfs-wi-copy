@@ -1,0 +1,15 @@
+{
+  "name": "tfs-wi-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm install -g tfx-cli",
+    "build": "tfx extension create --manifest-globs vss-extension.json --output-path ./dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vss-web-extension-sdk": "^2.109.1"
+  }
+}

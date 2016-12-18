@@ -7,7 +7,10 @@ var copyIdMenuProvider = (function () {
             }
             else if (actionContext.hasOwnProperty('workItemIds')) {
                 var ids = actionContext.workItemIds.join();
-            };
+            }
+            else if (actionContext.hasOwnProperty('id')) {
+                var ids = actionContext.id;
+            }
 
             console.log('found ids: ' + ids);
             this.copyTextToClipboard(ids);

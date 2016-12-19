@@ -1,10 +1,11 @@
 {
     "manifestVersion": 1,
     "id": "tfs-wi-copy",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "name": "Copy Work Item Id",
     "description": "Add a simple \"Copy Id\" button to all work items. The button will copy the Id(s) of the selected work item(s) to the user's clipboard.",
     "publisher": "travistx",
+    "public": true,
     "categories": [
         "Plan and track"
     ],
